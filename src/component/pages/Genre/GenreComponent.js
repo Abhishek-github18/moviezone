@@ -24,13 +24,13 @@ const GenreComponent = ({
           "https://api.themoviedb.org/3/genre/movie/list?api_key=1e01a4776ed5d50e951e04e8a03536c8"
         )
         .then((response) => {
-          // console.log(response.data.genres);
           setGenres(response.data.genres);
         });
     };
-
+  
     fetchGenre();
-  }, []);
+  }, [setGenres]);
+  
   return (
     <div className="container" style={{ padding: "6px 0" }}>
       {selectedGenre &&
