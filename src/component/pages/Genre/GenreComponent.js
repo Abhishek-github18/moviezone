@@ -28,8 +28,9 @@ const GenreComponent = ({
           setGenres(response.data.genres);
         });
     };
+
     fetchGenre();
-  }, [fetchGenre]);
+  }, []);
   return (
     <div className="container" style={{ padding: "6px 0" }}>
       {selectedGenre &&
