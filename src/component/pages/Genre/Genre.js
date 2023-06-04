@@ -11,23 +11,21 @@ const Genre = () => {
   const [data, setData] = useState([]);
   // const genreUrl = useGenre(selectedGenre);
 
-  const fetchMovies = () => {
-    axios
-      .get(
-        `https://api.themoviedb.org/3/discover/movie?api_key=1e01a4776ed5d50e951e04e8a03536c8&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=10&with_genres=${genreUrl}`
-      )
-      .then((response) => {
-        // console.log(response.data.results);
-        const result = response.data.results;
-        setData(result);
-      });
-  };
-
   useEffect(() => {
-    // fetchGenre();
+    const fetchMovies = () => {
+      axios
+        .get(
+          `https://api.themoviedb.org/3/discover/movie?api_key=1e01a4776ed5d50e951e04e8a03536c8&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=10&with_genres=${genreUrl}`
+        )
+        .then((response) => {
+          const result = response.data.results;
+          setData(result);
+        });
+    };
+  
     fetchMovies();
-  }, [genreUrl,fetchMovies]);
-
+  }, [genreUrl]);
+  
   return (
     <div className="section">
       {/* <h1></h1> */}

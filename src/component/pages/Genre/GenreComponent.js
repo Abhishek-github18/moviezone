@@ -16,17 +16,18 @@ const GenreComponent = ({
     setGenres([...genres, genre]);
     setSelectedGenre(selectedGenre.filter((g) => g.id !== genre.id));
   };
-  const fetchGenre = async () => {
-    await axios
-      .get(
-        "https://api.themoviedb.org/3/genre/movie/list?api_key=1e01a4776ed5d50e951e04e8a03536c8"
-      )
-      .then((response) => {
-        // console.log(response.data.genres);
-        setGenres(response.data.genres);
-      });
-  };
+
   useEffect(() => {
+    const fetchGenre = async () => {
+      await axios
+        .get(
+          "https://api.themoviedb.org/3/genre/movie/list?api_key=1e01a4776ed5d50e951e04e8a03536c8"
+        )
+        .then((response) => {
+          // console.log(response.data.genres);
+          setGenres(response.data.genres);
+        });
+    };
     fetchGenre();
   }, [fetchGenre]);
   return (

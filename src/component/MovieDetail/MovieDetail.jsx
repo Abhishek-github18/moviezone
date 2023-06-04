@@ -40,6 +40,7 @@ const MovieDetail = () => {
         <div style={{ paddingBottom: "2rem" }}>
           <div className="movie__intro" style={{ paddingBottom: "2rem" }}>
             <img
+            alt="movie poster"
               className="movie__backdrop"
               src={`https://image.tmdb.org/t/p/original${
                 currentMovieDetail.backdrop_path || ""
