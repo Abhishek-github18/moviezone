@@ -54,7 +54,7 @@ const MovieDetail = () => {
                     src={`https://image.tmdb.org/t/p/original${
                       currentMovieDetail.poster_path || ""
                     }`}
-                    alt=""
+                    alt="movieposter"
                   />
                 </div>
                 <div className="content">

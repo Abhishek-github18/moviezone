@@ -26,7 +26,7 @@ const Genre = () => {
   useEffect(() => {
     // fetchGenre();
     fetchMovies();
-  }, [genreUrl]);
+  }, [genreUrl,fetchMovies]);
 
   return (
     <div className="section">

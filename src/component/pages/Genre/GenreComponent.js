@@ -28,7 +28,7 @@ const GenreComponent = ({
   };
   useEffect(() => {
     fetchGenre();
-  }, []);
+  }, [fetchGenre]);
   return (
     <div className="container" style={{ padding: "6px 0" }}>
       {selectedGenre &&

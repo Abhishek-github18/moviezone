@@ -6,7 +6,7 @@ import { Watch } from "react-loader-spinner";
 
 const Trending = () => {
   const [content, setContent] = useState([]);
-  const [loader, setLoader] = useState(true);
+  // const [loader, setLoader] = useState(true);
   useEffect(() => {
     axios
       .get(

@@ -50,7 +50,7 @@ const DeleteMovie = () => {
       if (movie.id === id) updated = true;
       return movie.id !== id;
     });
-    if (updated == false) {
+    if (updated === false) {
       localStorage.setItem("movies", JSON.stringify(finalCollection));
       Swal.fire({
         title: "Error!",

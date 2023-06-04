@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Button, Modal, TextField } from "@mui/material";
-import movieDetail from "../config/MovieDataModel";
+// import movieDetail from "../config/MovieDataModel";
 import { useState } from "react";
 import MovieDetail from "../MovieDetail/MovieDetail";
 import Swal from "sweetalert2";
 import "./AddMovie.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const style = {
   display: "flex",
