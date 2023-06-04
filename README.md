@@ -1,71 +1,34 @@
-# Getting Started with Create React App
+MovieZone Web Application : 
+MovieZone is a web application that allows users to explore and interact with movie details. It provides various features and routes to enhance the user experience. Here is a breakdown of the different routes and functionalities available in the application:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Routes : 
+Search (Home) (/) : 
+The Search route serves as the home page of the application. It enables users to search for movie details by entering the movie title. The search results are displayed on the page, and users can click on each movie to view more detailed information.
 
-## Available Scripts
+Recommend (/recommend) : 
+The Recommend route showcases trending movies to the users. It presents a collection of popular movies that are currently trending. Users can click on each movie to get a comprehensive description of the movie.
 
-In the project directory, you can run:
+Page Navigation : 
+At the bottom of the Recommend page, users can find navigation links to the Genre and Cast routes. This design allows for easy access to these related pages without having to navigate back to the main navigation bar. Users can seamlessly switch between the Recommend, Genre, and Cast routes to explore different movie-related content.
 
-### `npm start`
+Genre(/recommend/genre) : 
+The Genre route enables users to discover movies based on their preferred genres. Users can select one or multiple genre chips from the available options. Upon selection, the page will update and display movies that belong to the chosen genre(s). Users can further explore and interact with the movies based on their interests.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Cast(/recommend/cast) : 
+The Cast route allows users to search for movies based on their favorite actors or actresses. Users can enter the name of the desired cast member in the search section. The page will present movies associated with the entered cast member. Users can click on each movie to access detailed information and further engage with the content.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+CRUD (Create, Read, Update, Delete) (/crud) : 
+The CRUD page consists of four main features for managing movie details:
 
-### `npm test`
+Create: Users can add new movie information, such as the movie name, ID, poster, genre, cast, and overview. The "AddMovie" button at the top of the page opens a modal form where users can fill in the necessary details about the movie they want to add. The movie details are stored in the browser's local storage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Read/Search: Users can search for the details of the movies they have added to the local storage using the "AddMovie" option. This feature is separate from the Search page, as it specifically searches for the movies added by the user.
 
-### `npm run build`
+Update: Users can update the details of existing movies stored in the local storage. After entering all the necessary details, users can update the movie information with the latest changes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Delete: The Delete feature allows users to remove movie details that are no longer required. Users can select the movies they want to delete, and upon confirmation, the selected movies will be removed from the local storage.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Loader : 
+The application includes a loader that runs continuously until the data has been fetched from the backend or the source of the data. The loader provides visual feedback to the user, indicating that the data is being retrieved and the page is loading.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# moviezone
+Thank you for your interest in MovieZone! I hope you enjoy exploring and interacting with the various features and routes available in the application.
