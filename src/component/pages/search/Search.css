@@ -1,0 +1,13 @@
+.section{
+    /* margin-top: 20px; */
+    padding-top: 6rem;
+    min-height: 100vw;
+    margin-bottom: 4rem;
+}
+.search-result{
+    /* margin: 3rem; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content : space-around;
+}

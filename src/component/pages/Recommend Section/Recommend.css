@@ -1,0 +1,7 @@
+.recommendButton{
+    display:flex;
+    justify-content : space-around;
+}
+.buttonrecommend:hover{
+    background-color:black;
+}

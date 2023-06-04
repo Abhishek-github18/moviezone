@@ -1,0 +1,17 @@
+.header{
+    position: fixed;
+    z-index:100;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center; 
+     align-items: center;
+    width: 100%;
+    background-color: #0C134F;
+    color: white;
+    cursor: pointer;
+}
+span{
+    margin-top: 0px;
+}
